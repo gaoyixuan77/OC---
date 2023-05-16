@@ -9,10 +9,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier: NSGregorianCalendar];//获取代表公历的Calendar对象
+        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier: NSCalendarIdentifierGregorian];//获取代表公历的Calendar对象
         NSDate *dt = [NSDate date];//获取当前日期
         
-        unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayOrdinalCalendarUnit;//定义一个时间字段的旗标，指定将会获取指定年、月、日、时、分、秒的信息
+        unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday;//定义一个时间字段的旗标，指定将会获取指定年、月、日、时、分、秒的信息
         NSDateComponents *comp = [gregorian components: unitFlags fromDate: dt];//获取不同时间字段的信息
         
         //获取各时间字段的数值
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"现在是%ld时",comp.hour);
         NSLog(@"现在是%ld分",comp.minute);
         NSLog(@"现在是%ld秒",comp.second);
-        NSLog(@"现在是星期%ld",comp.weekday);
+        NSLog(@"现在是星期%ld",comp.weekday);//这里输出的数字会比按照日历的星期数多一，是因为按西方他们是把周天当每周的第一天的
         
         NSDateComponents *comp2 = [[NSDateComponents alloc] init];//再次创建一个NSDateComponents对象
         

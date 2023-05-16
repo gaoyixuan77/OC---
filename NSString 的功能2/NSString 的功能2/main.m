@@ -39,6 +39,9 @@ int main(int argc, const char * argv[]) {
         
         str1 = [str1 uppercaseString];
         NSLog(@"str1的字符转化为大写：%@",str1);
+        
+        NSLog(@"str1的字符个数为：%lu",[str1 length]);
+        NSLog(@"str1按UTF-8解码后字节数为：%lu",[str1 lengthOfBytesUsingEncoding: NSUTF8StringEncoding]);
     }
     return 0;
 }

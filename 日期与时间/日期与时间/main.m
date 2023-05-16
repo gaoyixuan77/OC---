@@ -9,6 +9,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        //NSDate的功能演示
+        NSLog(@"----------------------以下是NSDate的功能运行结果--------------------");
         NSDate *date1 = [NSDate date]; //获取当前时间
         NSLog(@"%@",date1);
         
@@ -44,6 +46,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"date1和date3的时间差是%g秒",[date1 timeIntervalSinceDate: date3]);//获取两个时间的时间差
         NSLog(@"date2与现在的时间差%g秒",[date2 timeIntervalSinceNow]);//获取指定时间和现在的时间差
         
+        
+        //NSDateFormatter的功能
+        NSLog(@"----------------以下是NSDateFormatter的功能的运行结果----------------");
         NSDateFormatter *dt = [NSDate dateWithTimeIntervalSince1970:3600 * 24 * 366 * 20];//格式化时间为从1970年1月1日开始的20年后的时间
         
         NSLocale *locales[] = {[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"],[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]};//创建两个NSLocale分别表示中国、美国

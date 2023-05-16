@@ -11,5 +11,11 @@
 
 @synthesize name;
 @synthesize age;
+- (id) stringWithZone: (NSZone*) zone {
+    FKDog *dog = [[[self class] allocWithZone: zone] init];
+    dog.name = self.name;
+    dog.age = self.age;
+    return dog;
+}
 
 @end
