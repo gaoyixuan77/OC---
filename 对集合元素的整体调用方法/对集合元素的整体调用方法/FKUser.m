@@ -36,4 +36,11 @@
     return [NSString stringWithFormat:@"<FKUser[name = %@,pass = %@>",self.name,self.pass];
 }
 
+- (NSUInteger) hash {
+    NSLog(@"===hash===");
+    NSUInteger nameHash = name == nil ? 0 : [name hash];
+    NSUInteger passHash = pass == nil ? 0 : [pass hash];
+    return nameHash * 31 + passHash;
+}
+
 @end

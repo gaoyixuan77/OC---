@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A520D3492A1510E60028FC74 /* xxx.m in Sources */ = {isa = PBXBuildFile; fileRef = A520D3482A1510E60028FC74 /* xxx.m */; };
 		A529BBB82A0BE3C100C3EB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A529BBB72A0BE3C100C3EB89 /* main.m */; };
-		A529BBC02A0BE3EF00C3EB89 /* FKDog.m in Sources */ = {isa = PBXBuildFile; fileRef = A529BBBF2A0BE3EF00C3EB89 /* FKDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A520D3472A1510E60028FC74 /* xxx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xxx.h; sourceTree = "<group>"; };
+		A520D3482A1510E60028FC74 /* xxx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xxx.m; sourceTree = "<group>"; };
 		A529BBB42A0BE3C100C3EB89 /* 深复制 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "深复制"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A529BBB72A0BE3C100C3EB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A529BBBE2A0BE3EF00C3EB89 /* FKDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDog.h; sourceTree = "<group>"; };
-		A529BBBF2A0BE3EF00C3EB89 /* FKDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A529BBB72A0BE3C100C3EB89 /* main.m */,
-				A529BBBE2A0BE3EF00C3EB89 /* FKDog.h */,
-				A529BBBF2A0BE3EF00C3EB89 /* FKDog.m */,
+				A520D3472A1510E60028FC74 /* xxx.h */,
+				A520D3482A1510E60028FC74 /* xxx.m */,
 			);
 			path = "深复制";
 			sourceTree = "<group>";
@@ -124,8 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A520D3492A1510E60028FC74 /* xxx.m in Sources */,
 				A529BBB82A0BE3C100C3EB89 /* main.m in Sources */,
-				A529BBC02A0BE3EF00C3EB89 /* FKDog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

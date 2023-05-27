@@ -29,7 +29,6 @@
 		A56EC69C2A03E6C100A9757C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A56EC6A32A03E76F00A9757C /* FKPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPerson.h; sourceTree = "<group>"; };
 		A56EC6A42A03E76F00A9757C /* FKPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPerson.m; sourceTree = "<group>"; };
-		A56EC6A62A03E81500A9757C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		A56EC6A72A03ED1700A9757C /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		A56EC6A82A03ED1700A9757C /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +66,6 @@
 				A56EC69C2A03E6C100A9757C /* main.m */,
 				A56EC6A32A03E76F00A9757C /* FKPerson.h */,
 				A56EC6A42A03E76F00A9757C /* FKPerson.m */,
-				A56EC6A62A03E81500A9757C /* Header.h */,
 				A56EC6A72A03ED1700A9757C /* Student.h */,
 				A56EC6A82A03ED1700A9757C /* Student.m */,
 			);
